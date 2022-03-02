@@ -17,13 +17,22 @@ import {
   CoreStateModule,
   coreStateRoutes,
 } from '@fem-production-angular/core-state';
-import {
-  MaterialModule,
-  materialRoutes,
-} from '@fem-production-angular/material';
+import { MaterialModule } from '@fem-production-angular/material';
+import { RoutingModule } from './routing.module';
+import { WidgetsComponent } from './widgets/widgets.component';
+import { WidgetListComponent } from './widgets/widget-list/widget-list.component';
+import { WidgetDetailsComponent } from './widgets/widget-details/widget-details.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
-  declarations: [AppComponent, NxWelcomeComponent],
+  declarations: [
+    AppComponent,
+    NxWelcomeComponent,
+    WidgetsComponent,
+    WidgetListComponent,
+    WidgetDetailsComponent,
+    HomeComponent,
+  ],
   imports: [
     BrowserModule,
     HttpClientModule,
@@ -43,6 +52,7 @@ import {
     CoreDataModule,
     CoreStateModule,
     MaterialModule,
+    RoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
