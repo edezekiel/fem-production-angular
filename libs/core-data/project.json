@@ -2,7 +2,7 @@
   "projectType": "library",
   "root": "libs/core-data",
   "sourceRoot": "libs/core-data/src",
-  "prefix": "fem-production-angular",
+  "prefix": "fem",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",

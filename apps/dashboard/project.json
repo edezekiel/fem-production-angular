@@ -2,13 +2,11 @@
   "projectType": "application",
   "root": "apps/dashboard",
   "sourceRoot": "apps/dashboard/src",
-  "prefix": "fem-production-angular",
+  "prefix": "fem",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/dashboard",
         "index": "apps/dashboard/src/index.html",
@@ -91,9 +89,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "coverage/apps/dashboard"
-      ],
+      "outputs": ["coverage/apps/dashboard"],
       "options": {
         "jestConfig": "apps/dashboard/jest.config.js",
         "passWithNoTests": true

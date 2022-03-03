@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'fem-production-angular-widgets',
+  selector: 'fem-widgets',
   templateUrl: './widgets.component.html',
-  styleUrls: ['./widgets.component.scss']
+  styleUrls: ['./widgets.component.scss'],
 })
-export class WidgetsComponent  {
-}
+export class WidgetsComponent {}
