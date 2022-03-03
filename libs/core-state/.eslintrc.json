@@ -21,7 +21,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "fem-production-angular",
+            "prefix": "fem",
             "style": "kebab-case"
           }
         ]
