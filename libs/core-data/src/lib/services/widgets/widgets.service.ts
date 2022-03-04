@@ -3,6 +3,10 @@ import { Injectable } from '@angular/core';
 import { environment } from '@env/environment';
 import { Widget } from '@fem/api-interfaces';
 
+const BASE_URL = environment.production
+  ? 'http://localhost:3333/api/'
+  : 'http://localhost:3333/api/';
+  
 @Injectable({
   providedIn: 'root',
 })
@@ -32,7 +36,7 @@ export class WidgetsService {
   }
 
   private getUrl() {
-    return `${environment.apiEndpoint}${this.model}`;
+    return `${BASE_URL}${this.model}`;
   }
 
   private getUrlWithId(id: string | null) {
